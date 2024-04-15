@@ -9,7 +9,9 @@ This repository contains a Bash script and a Deployment definition for Kubernete
 
 First, apply the Deployment definition in the `nginx-deployment.yaml` file to your Kubernetes cluster:
 
+```bash
 kubectl apply -f nginx-deployment.yaml
+```
 
 This will create a Deployment named nginx and activate 3 replicas.
 
@@ -17,7 +19,9 @@ This will create a Deployment named nginx and activate 3 replicas.
 
 Next, run the Bash script named `scheduler.sh` to initiate the pod matching process. The script will check pending pods and bind those assigned to a specific scheduler to a random node.
 
+```bash
 ./scheduler.sh
+```
 
 After running the script, a loop will start where pending pods are continuously monitored and assigned to an appropriate node.
 
@@ -35,4 +39,6 @@ You can update these variables at the beginning of the script.
 
 - This script and Deployment definition are designed for learning and testing purposes only. Ensure thorough testing before using them in real production environments.
 - The script requires tools like `kubectl` and `curl`. Make sure these tools are installed on your system.
+
+
 
