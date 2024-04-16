@@ -1,4 +1,4 @@
-# Kubernetes Pod Matching Script and Deployment Definition
+# Kubernetes Scheduler
 
 I made it because it was helpful for me to learn
 This repository contains a Bash script and a Deployment definition for Kubernetes clusters, which assigns pending pods to a specific custom scheduler and then binds them to a random node.
